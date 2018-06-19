@@ -1,0 +1,21 @@
+﻿@model IEnumerable<EmployeeView>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<table>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.FirstName</td>
+            <td>@item.SurName</td>
+            <td>@item.Patronymic</td>
+            <td>@item.Age</td>
+            <td>@Html.ActionLink("Детали", "Details", new { Id = item.ID })</td>
+            <td>@Html.ActionLink("Редактировать", "Update", new { Id = item.ID })</td>
+            <td>@Html.ActionLink("Удалить", "Delete", new { Id = item.ID })</td>
+        </tr>
+    }
+</table>
+@Html.ActionLink("Добавить", "Add")

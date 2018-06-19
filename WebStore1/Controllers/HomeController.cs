@@ -9,52 +9,46 @@ namespace WebStore1.Properties.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly List<EmployeeView> _employees = new List<EmployeeView>
-        {
-            new EmployeeView
-            {
-                ID = 1,
-                FirstName = "Евгений",
-                SurName = "Онегин",
-                Patronymic = "Александрович",
-                Age = 23,
-                City = "New York",
-                Experience = "5 years",
-                DOB = "23.10.1985"
-            },
-            new EmployeeView
-            {
-                ID = 2,
-                FirstName = "Тихон",
-                SurName = "Кабанов",
-                Patronymic = "Иванович",
-                Age = 21,
-                City = "Brooklyn",
-                Experience = "3 years",
-                DOB = "11.03.1991"
-            }
-        };
-
-
         public IActionResult Index()
         {
-            return View(_employees);
+            return View();
         }
-        public IActionResult Details(int Id)
+        public IActionResult Shop()
         {
-            var selectedUsers = from EmployeeView in _employees
-                                where EmployeeView.ID == Id
-                                select EmployeeView;
-            return View(selectedUsers);
-            //List<EmployeeView> res = (from u in _employees join n in Id on u.ID equals n select u).ToList();
+            return View();
+        }
+        public IActionResult ProductDetails()
+        {
+            return View();
+        }
 
-
-
-
-
-            //return View(_employees.Find(item => item.ID == Id));
-
-            //return View(_employees.Find(x => x.ID == Id));
+        public IActionResult CheckOut()
+        {
+            return View();
+        }
+        public IActionResult Cart()
+        {
+            return View();
+        }
+        public IActionResult Login()
+        {
+            return View();
+        }
+        public IActionResult BlogList()
+        {
+            return View();
+        }
+        public IActionResult BlogSingle()
+        {
+            return View();
+        }
+        public IActionResult NotFound()
+        {
+            return View();
+        }
+        public IActionResult Contact()
+        {
+            return View();
         }
     }
 }

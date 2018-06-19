@@ -1,19 +1,12 @@
 ﻿
 @{
-    Layout = null;
+    ViewBag.Title = "Details";
 }
 
-<!DOCTYPE html>
 
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" charset="utf-8"/>
-    <title>Details</title>
-</head>
-<body>
-    <table>
-        @foreach (var item in Model)
-        {
+<table>
+    @foreach (var item in Model)
+    {
         <tr>
             <td>@item.FirstName</td>
             <td>@item.SurName</td>
@@ -24,7 +17,6 @@
             <td>@item.DOB</td>
             <td>@Html.ActionLink("Назад", "Index")</td>
         </tr>
-        }
-    </table>
-</body>
-</html>
+    }
+</table>
+

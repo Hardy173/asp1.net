@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TypeScriptToolsVersion>2.8</TypeScriptToolsVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -12,12 +13,21 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
-    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.3" />
+    <None Include="wwwroot\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\js\contact.js" />
+    <None Include="wwwroot\js\gmaps.js" />
+    <None Include="wwwroot\js\html5shiv.js" />
+    <None Include="wwwroot\js\jquery.js" />
+    <None Include="wwwroot\js\jquery.prettyPhoto.js" />
+    <None Include="wwwroot\js\jquery.scrollUp.min.js" />
+    <None Include="wwwroot\js\main.js" />
+    <None Include="wwwroot\js\price-range.js" />
   </ItemGroup>
 
 </Project>
