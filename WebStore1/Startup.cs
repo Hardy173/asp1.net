@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using WebStore1.Infrastructure.Implementations;
+using WebStore1.Infrastructure.Interfaces;
 
 namespace WebStore1
 {
@@ -21,7 +23,9 @@ namespace WebStore1
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc(); 
+            services.AddMvc();
+
+            services.AddSingleton<IEmployeesData, InMemoryEmployeesData>();
         }
 
         
@@ -33,15 +37,16 @@ namespace WebStore1
                 app.UseDeveloperExceptionPage();
             }
 
-
             app.UseStaticFiles();
 
+            app.UseWelcomePage("/welcome");
+
+            // Добавляем обработку запросов в mvc-формате
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
                 name: "default",
-                defaults: new {controller = "Home", action = "Index"},
-                template: "{controller}/{action}/{id?}");
+                template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

@@ -1,9 +1,5 @@
 ﻿
-@{
-    ViewBag.Title = "Details";
-}
-
-
+<h2>Создать пользователя</h2>
 <table>
     @foreach (var item in Model)
     {
@@ -19,4 +15,8 @@
         </tr>
     }
 </table>
+
+@Html.ActionLink("Назад", "Index")
+
+
 
