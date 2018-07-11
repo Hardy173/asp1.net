@@ -57,19 +57,29 @@ namespace WebStore1.Controllers
                 var dbItem = _employeesData.GetById(model.ID);
                 if (ReferenceEquals(dbItem, null))
                     return NotFound();// возвращаем результат 404 Not Found
+                
                 dbItem.FirstName = model.FirstName;
                 dbItem.SurName = model.SurName;
-                dbItem.Age = model.Age;
                 dbItem.Patronymic = model.Patronymic;
+                dbItem.Age = model.Age;
                 dbItem.City = dbItem.City;
                 dbItem.Experience = dbItem.Experience;
                 dbItem.DOB = dbItem.DOB;
+                
             }
             else
             {
-                _employeesData.AddNew(model);
+                if (ModelState.IsValid)
+                {
+                    _employeesData.AddNew(model);
+                }
             }
-            return RedirectToAction(nameof(Index));
+
+            if (ModelState.IsValid)
+            {
+                return RedirectToAction(nameof(Index));
+            }
+            return View(model);
         }
         [Route("delete/{id}")]
 

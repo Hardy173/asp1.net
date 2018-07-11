@@ -26,7 +26,7 @@ namespace WebStore1.Infrastructure.Implementations
                 Patronymic = "Александрович",
                 Age = 23,
                 City = "New York",
-                Experience = "5 years",
+                Experience = "5",
                 DOB = "23.10.1985"
             },
             new EmployeeView
@@ -37,7 +37,7 @@ namespace WebStore1.Infrastructure.Implementations
                 Patronymic = "Иванович",
                 Age = 21,
                 City = "Brooklyn",
-                Experience = "3 years",
+                Experience = "3",
                 DOB = "11.03.1991"
             }
         };
