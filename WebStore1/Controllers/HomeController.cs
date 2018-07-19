@@ -13,14 +13,7 @@ namespace WebStore1.Properties.Controllers
         {
             return View();
         }
-        public IActionResult Shop()
-        {
-            return View();
-        }
-        public IActionResult ProductDetails()
-        {
-            return View();
-        }
+        
 
         public IActionResult CheckOut()
         {

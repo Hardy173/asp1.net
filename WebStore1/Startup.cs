@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using WebStore1.Infrastructure.Implementations;
+using WebStore1.Infrastructure.Implementations;
 using WebStore1.Infrastructure.Interfaces;
 
 namespace WebStore1
@@ -26,6 +27,9 @@ namespace WebStore1
             services.AddMvc();
 
             services.AddSingleton<IEmployeesData, InMemoryEmployeesData>();
+
+            services.AddSingleton<IProductData, InMemoryProductData>();
+
         }
 
         

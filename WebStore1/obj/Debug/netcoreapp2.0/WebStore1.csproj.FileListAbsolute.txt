@@ -9,3 +9,6 @@ C:\Users\Rustam\source\repos\WebStore1\WebStore1\obj\Debug\netcoreapp2.0\WebStor
 C:\Users\Rustam\source\repos\WebStore1\WebStore1\obj\Debug\netcoreapp2.0\WebStore1.AssemblyInfo.cs
 C:\Users\Rustam\source\repos\WebStore1\WebStore1\obj\Debug\netcoreapp2.0\WebStore1.dll
 C:\Users\Rustam\source\repos\WebStore1\WebStore1\obj\Debug\netcoreapp2.0\WebStore1.pdb
+C:\Users\Rustam\source\repos\WebStore1\WebStore1\obj\Debug\netcoreapp2.0\WebStore1.csproj.CopyComplete
+C:\Users\Rustam\source\repos\WebStore1\WebStore1\bin\Debug\netcoreapp2.0\WebStore1.Domain.dll
+C:\Users\Rustam\source\repos\WebStore1\WebStore1\bin\Debug\netcoreapp2.0\WebStore1.Domain.pdb

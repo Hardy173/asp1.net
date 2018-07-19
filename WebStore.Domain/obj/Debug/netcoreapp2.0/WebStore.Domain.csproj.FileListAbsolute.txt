@@ -1,0 +1,9 @@
+C:\Users\Rustam\source\repos\WebStore1\WebStore.Domain\bin\Debug\netcoreapp2.0\WebStore.Domain.deps.json
+C:\Users\Rustam\source\repos\WebStore1\WebStore.Domain\bin\Debug\netcoreapp2.0\WebStore.Domain.dll
+C:\Users\Rustam\source\repos\WebStore1\WebStore.Domain\bin\Debug\netcoreapp2.0\WebStore.Domain.pdb
+C:\Users\Rustam\source\repos\WebStore1\WebStore.Domain\obj\Debug\netcoreapp2.0\WebStore.Domain.csprojAssemblyReference.cache
+C:\Users\Rustam\source\repos\WebStore1\WebStore.Domain\obj\Debug\netcoreapp2.0\WebStore.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Rustam\source\repos\WebStore1\WebStore.Domain\obj\Debug\netcoreapp2.0\WebStore.Domain.AssemblyInfoInputs.cache
+C:\Users\Rustam\source\repos\WebStore1\WebStore.Domain\obj\Debug\netcoreapp2.0\WebStore.Domain.AssemblyInfo.cs
+C:\Users\Rustam\source\repos\WebStore1\WebStore.Domain\obj\Debug\netcoreapp2.0\WebStore.Domain.dll
+C:\Users\Rustam\source\repos\WebStore1\WebStore.Domain\obj\Debug\netcoreapp2.0\WebStore.Domain.pdb

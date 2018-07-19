@@ -30,4 +30,8 @@
     <None Include="wwwroot\js\price-range.js" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WebStore.Domain\WebStore1.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
